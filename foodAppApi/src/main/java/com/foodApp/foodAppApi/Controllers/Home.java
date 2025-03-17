@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Home {
     @GetMapping("/home")
     public String home(){
-        return "Welcome to FoodApp API";
+        return "Welcome to FoodApp API test";
     }
 }
