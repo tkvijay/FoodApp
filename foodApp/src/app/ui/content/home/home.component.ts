@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:8080/api/getsliders')
+    this.http.get<any[]>('http://localhost:8080/api/products')
       .subscribe(data => {
         this.sliders = data;
         console.log(this.sliders);
