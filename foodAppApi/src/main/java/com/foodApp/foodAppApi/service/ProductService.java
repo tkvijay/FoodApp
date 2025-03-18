@@ -49,4 +49,8 @@ public class ProductService {
             });
     }
 
+    public  List<Product> findTopThree(){
+        return productRepository.findTop3ByName();
+    }
+
 }
