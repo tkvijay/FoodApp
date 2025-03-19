@@ -12,6 +12,15 @@ public class Product {
     private Double price;
     private String description;
     private Long categoryId;
+    private String imagepath;
+
+    public String getImagepath() {
+        return imagepath;
+    }
+
+    public void setImagepath(String imagepath) {
+        this.imagepath = imagepath;
+    }
 
     public Long getCategoryId() {
         return categoryId;
@@ -31,11 +40,12 @@ public class Product {
         this.description = description;
     }
 
-    public Product(String name, Double price, String description, Long categoryId) {
+    public Product(String name, Double price, String description, Long categoryId, String imagepath) {
         this.name = name;
         this.price = price;
         this.description = description;
         this.categoryId = categoryId;
+        this.imagepath = imagepath;
     }
 
     public Product() {

@@ -59,5 +59,9 @@ public class ProductController {
         return productService.findTopThree();
     }
 
+    @GetMapping("/category/{categoryId}")
+    public List<Product> findByCategoryId(Long categoryId){
+        return productService.findByCategoryId(categoryId);
+    }
 
 }

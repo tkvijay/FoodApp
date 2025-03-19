@@ -53,4 +53,8 @@ public class ProductService {
         return productRepository.findTop3ByName();
     }
 
+    public List<Product> findByCategoryId(Long categoryId){
+        return productRepository.findByCategoryId(categoryId);
+    }
+
 }
