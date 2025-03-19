@@ -20,7 +20,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     @Query("SELECT p FROM Product p ORDER BY p.name DESC")
     List<Product> findTop3ByName();
 
-    @Query("SELECT p FROM Product p where p.categoryid = :categoryID ORDER BY name DESC")
-    List<Product> findByCategoryId(@Param("categoryID") Long categoryId);
+    // @Query("SELECT p FROM Product p where p.categoryid = :categoryID ORDER BY name DESC")
+    // List<Product> findByCategoryId(@Param("categoryID") Long categoryId);
     
 }
