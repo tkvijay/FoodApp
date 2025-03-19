@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
-@EntityScan(basePackages = "com.foodApp.foodAppApi.model")
+@EntityScan(basePackages = "com.foodApp.foodAppApi.*")
 public class FoodAppApiApplication {
 
 	public static void main(String[] args) {

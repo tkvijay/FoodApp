@@ -50,8 +50,8 @@ public class CategoryService {
             .orElseThrow(() -> new RuntimeException("Category not found with id " + id));
     }
 
-    public List<Category> findTopThree(){
-        return categoryRepository.findTop3ByName();
-    }
+    // public List<Category> findTopThree(){
+    //     return categoryRepository.findTop3ByName();
+    // }
 
 }

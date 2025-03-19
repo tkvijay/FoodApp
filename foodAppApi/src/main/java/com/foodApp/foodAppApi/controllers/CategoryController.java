@@ -50,13 +50,13 @@ public class CategoryController {
     }
     
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteProduct(@PathVariable Long id){
+    public ResponseEntity<Void> deleteCatergory(@PathVariable Long id){
         categoryService.deleteCategory(id);
         return ResponseEntity.noContent().build();
     }
 
-    @GetMapping("/topThree")
-    public  List<Category> findTopThree(){
-        return categoryService.findTopThree();
-    }
+    // @GetMapping("/topThree")
+    // public  List<Category> findTopThree(){
+    //     return categoryService.findTopThree();
+    // }
 }
