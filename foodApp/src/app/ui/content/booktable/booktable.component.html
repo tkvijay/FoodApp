@@ -9,18 +9,18 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form  (ngSubmit)="onSubmit()">
+            <form  [formGroup]="bookTableForm" (ngSubmit)="onSubmit()">
               <div>
-                <input type="text" class="form-control" placeholder="Your Name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" />
+                <input type="text" class="form-control" placeholder="Your Name" formControlName="name"  />
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Phone Number" [(ngModel)]="phone"  [ngModelOptions]="{standalone: true}"  />
+                <input type="text" class="form-control" placeholder="Phone Number" formControlName="phone"   />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="Your Email" [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" />
+                <input type="email" class="form-control" placeholder="Your Email" formControlName="email"   />
               </div>
               <div>
-                <select class="form-control nice-select wide" [(ngModel)]="people"  [ngModelOptions]="{standalone: true}">
+                <select class="form-control nice-select wide" formControlName="people" >
                   <option value="" disabled selected>
                     How many persons?
                   </option>
@@ -39,7 +39,7 @@
                 </select>
               </div>
               <div>
-                <input type="date" class="form-control" [(ngModel)]="date"  [ngModelOptions]="{standalone: true}">
+                <input type="date" class="form-control" formControlName="date" >
               </div>
               <div class="btn_box">
                 <button type="submit" >
